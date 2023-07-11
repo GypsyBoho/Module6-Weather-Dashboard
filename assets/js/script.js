@@ -4,7 +4,8 @@ function fetchWeatherData() {
     var requestUrl = 'https://openweathermap.org/forecast5';
 }
 
-
+// 5 day forcat
+// Map forcast
 
 // Fetching the weather data
 fetch(requestUrl) {
