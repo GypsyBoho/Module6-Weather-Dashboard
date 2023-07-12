@@ -1,7 +1,9 @@
-
-
+// global variables that need to be stored and reference in multiple functions
 function fetchWeatherData() {
-    var requestUrl = 'https://openweathermap.org/forecast5';
+    var requestUrlOpenWeathMap = 'https://openweathermap.org/forecast5';
+// add all your URL with specific variable namnes
+// store API keys
+// element selcetors
 }
 
 // 5 day forcat

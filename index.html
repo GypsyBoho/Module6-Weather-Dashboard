@@ -5,23 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-    <!-- header with h1 -->
+    <header>
+        <!-- header with h1 -->
+        <h1>Weather Dashboard</h1>
+    </header>
+
     <!-- two colums 1/4 and 3/4 -->
-        <!-- first colum
+    <div class="row">
+        <div class="col-3">
+            <div class="card-body">
+                <h2>Search for city</h2>
+                <input id ="city-search" type="text" placeholder="City Name">
+                <button id="search-btn">Search</button>
+            </div>
+            <div id="search-history">
+
+            </div>
+        </div>
+
+        <div class="col-9">
+            <div id="current-weather">
+               
+            </div>
+            <div id="five-forcast">
+
+            </div>
+        </div>
+    </div>
+    <!-- first colum
                 search bar
                 recent searches
         second colum
-        today's weather of searched city
-        5 day forcast for that city
-        h2 for "Search for a city" sub header    -->
-    <script src="./assets/js/script.js"></script>
+            today's weather of searched city
+            5 day forcast for that city
+            h2 for "Search for a city" sub header    -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
+
+<!-- we can not get the weather until we fetch the cordinates -->
+<!-- each API could be its own function -->
